@@ -341,12 +341,15 @@ import Base from '../layouts/Base.astro';
 </Base>
 
 <style>
-  /* ---- section 1: epistemology, must fit in one viewport ---- */
+  /* ---- section 1: epistemology, must fit in one viewport (desktop only —
+     mobile has too little width for this content to also fit the height cap) ---- */
   .hero-fit {
     position: relative;
-    max-height: calc(100dvh - 4.25rem);
     display: flex;
     align-items: flex-start;
+  }
+  @media (min-width: 760px) {
+    .hero-fit { max-height: calc(100dvh - 4.25rem); }
   }
 
   .hero-content {
@@ -404,7 +407,9 @@ import Base from '../layouts/Base.astro';
   }
   .epi-def {
     flex: 1 1 260px;
-    white-space: nowrap;
+  }
+  @media (min-width: 700px) {
+    .epi-def { white-space: nowrap; }
   }
 
   /* headline, then sentences below — one column, full width */
