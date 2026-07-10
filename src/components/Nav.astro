@@ -1,0 +1,99 @@
+---
+// Nav items are added back here as each page gets rebuilt.
+const items: { href: string; label: string }[] = [
+  { href: '/#work', label: 'Projects' },
+  { href: '/#journey', label: 'Experience' },
+];
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || path.startsWith(href + '/');
+---
+
+<header class="nav-wrap">
+  <div class="page nav">
+    <a href="/" class="wordmark">Pratyush Shrivastav</a>
+    <div class="nav-right">
+      <nav aria-label="Primary">
+        {items.map((item) => (
+          <a href={item.href} class:list={['nav-link', { active: isActive(item.href) }]}>
+            {item.label}
+          </a>
+        ))}
+      </nav>
+      <a
+        href="https://www.linkedin.com/in/f1pratyush/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="icon-btn"
+        aria-label="LinkedIn"
+      >
+        <img src="/linkedin.png" alt="" />
+      </a>
+      <a
+        href="https://wa.me/919748482875"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--solid"
+      >Say hello</a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .nav-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.25rem;
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .nav-right { display: flex; align-items: center; gap: clamp(1rem, 3vw, 2.25rem); }
+  nav { display: flex; gap: clamp(1rem, 3vw, 2.25rem); }
+  .nav-link {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #3a5a7a;
+    padding: 0.42rem 0.9rem;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    background: #e2f0f9;
+  }
+
+  .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    border: 1.5px solid var(--hairline-strong);
+    flex-shrink: 0;
+    transition: border-color 0.2s ease;
+  }
+  .icon-btn:hover { border-color: var(--accent); }
+  .icon-btn img {
+    width: 1.15rem;
+    height: 1.15rem;
+    object-fit: contain;
+  }
+</style>

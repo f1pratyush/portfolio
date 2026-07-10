@@ -1,0 +1,71 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer-wrap">
+  <div class="page footer">
+    <div class="footer-top">
+      <div>
+        <p class="footer-kicker">Get in touch</p>
+        <p class="footer-line display">
+          Let's reduce some <em>uncertainty</em> together.
+        </p>
+      </div>
+      <a
+        href="https://wa.me/919748482875"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--solid footer-cta"
+      >Say hello →</a>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">Pratyush Kumar Shrivastav — {year}</span>
+      <a href="mailto:kumarpratyush239@gmail.com" class="footer-email">kumarpratyush239@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer-wrap {
+    background: var(--paper-dark);
+    color: var(--ink-dark);
+    margin-top: clamp(4rem, 10vh, 7rem);
+  }
+  .footer { padding-block: clamp(3.5rem, 8vh, 5.5rem) 2rem; }
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: clamp(3rem, 7vh, 5rem);
+    padding-bottom: clamp(2.5rem, 6vh, 4rem);
+    border-bottom: 1px solid var(--hairline-dark);
+  }
+  .footer-kicker {
+    font-family: var(--sans);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-soft);
+    margin-bottom: 0.6rem;
+  }
+  .footer-line { font-size: var(--step-2); max-width: 20ch; color: var(--ink-dark); }
+  .footer-line em { color: var(--accent-soft); font-style: italic; }
+  .footer-cta { flex-shrink: 0; }
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-copy, .footer-email {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: rgba(244, 246, 250, 0.5);
+    text-decoration: none;
+  }
+  .footer-email:hover { color: var(--accent-soft); }
+</style>
