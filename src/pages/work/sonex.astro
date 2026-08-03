@@ -1,0 +1,264 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Sonex — AI Orchestration Layer — Pratyush Shrivastav"
+  description="An AI orchestration layer that turns conversations into product actions. Translating natural language into structured API calls."
+>
+  <section class="work-hero">
+    <div class="hero-content">
+      <div class="work-breadcrumb reveal">
+        <a href="/">← Back to home</a>
+      </div>
+
+      <div class="work-head reveal">
+        <span class="kicker kicker--accent">Sonex</span>
+        <h1 class="work-title display">
+          Voice is easy. Reliable execution isn't.
+        </h1>
+        <p class="work-lede">
+          Sonex is an AI orchestration layer that translates natural language into structured API calls, allowing AI assistants to interact with real products instead of simply generating text. A speech-to-intent SDK that makes AI experiences effortless for developers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-content">
+    <div class="page">
+      <div class="content-block reveal">
+        <h2>The Problem</h2>
+        <p>
+          Every AI assistant today does the same thing: it talks. It generates text that sounds intelligent, informed, and helpful.
+        </p>
+        <p>
+          But when developers try to connect that intelligence to actual product actions—sending a message, updating a profile, completing a transaction—the architecture breaks down. The gap between natural language and structured execution is enormous.
+        </p>
+        <p>
+          This is why most AI assistants are read-only. They inform, they suggest, they generate—but they don't <em>do</em>.
+        </p>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Opportunity</h2>
+        <p>
+          What if we could bridge that gap? What if developers could give their AI assistant the ability to execute real actions—in minutes, not months?
+        </p>
+        <p>
+          Sonex is built on a simple insight: the hard problem isn't understanding natural language. Modern LLMs are already excellent at that. The hard problem is <em>mapping intent to action</em>—taking what the user said and translating it into the right API call with the right parameters.
+        </p>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>How It Works</h2>
+        <p>
+          Sonex operates in three layers:
+        </p>
+        <div class="principle-list">
+          <div class="principle-item">
+            <h3>Intent Recognition</h3>
+            <p>
+              Parse user intent from natural language, considering context, previous messages, and uncertainty. Understand what the user is trying to do, not just what they said.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Parameter Extraction</h3>
+            <p>
+              Extract the structured data needed to execute the intent. If a user says "text my mom happy birthday," extract the recipient, message, and metadata.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Safe Execution</h3>
+            <p>
+              Execute the intent against your API while maintaining safety, confirmability, and auditability. Show the user what's about to happen before it happens.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Key Features</h2>
+        <ul class="content-list">
+          <li><strong>Multi-turn context</strong> — The assistant remembers the conversation and refines its understanding as the user clarifies.</li>
+          <li><strong>Confidence scoring</strong> — When intent is ambiguous, the system tells the user it's unsure and asks for clarification.</li>
+          <li><strong>Confirmable actions</strong> — Before executing, the system shows the user exactly what it's about to do.</li>
+          <li><strong>Audit trails</strong> — Every action is logged, with the original intent, extracted parameters, and execution result.</li>
+          <li><strong>Extensible intent space</strong> — Define your own intents and actions. Sonex learns to map language to those actions.</li>
+        </ul>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Use Cases</h2>
+        <p>
+          Sonex unlocks use cases that were previously impossible:
+        </p>
+        <ul class="content-list">
+          <li><strong>AI-first customer support</strong> — Customers speak to an AI that can actually resolve issues, not just answer questions.</li>
+          <li><strong>Voice-controlled applications</strong> — Users can control complex workflows entirely through conversation.</li>
+          <li><strong>Accessibility-first design</strong> — Users with mobility or vision impairments can interact with applications hands-free.</li>
+          <li><strong>Ambient intelligence</strong> — AI that doesn't just inform, but acts. Ask your app to do something, and it does it.</li>
+        </ul>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Vision</h2>
+        <p>
+          Today, adding authentication, analytics, or payments to an application is straightforward. There are SDKs, APIs, and patterns that every developer knows.
+        </p>
+        <p>
+          Our goal with Sonex is to make natural language interaction just as straightforward. A single SDK. Clear patterns. Minimal code. Maximum capability.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .work-hero {
+    padding-block-start: clamp(2rem, 6vh, 3.5rem);
+    padding-block-end: clamp(2rem, 6vh, 3.5rem);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .work-content {
+    padding-block-start: clamp(2.5rem, 8vh, 4.5rem);
+    padding-block-end: clamp(3rem, 10vh, 5rem);
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vh, 2rem);
+  }
+
+  .work-breadcrumb a {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 250ms;
+  }
+  .work-breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .work-title {
+    font-size: clamp(2rem, 6vh, 3.2rem);
+    max-width: 16ch;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .work-lede {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(1rem, 2.4vh, 1.25rem);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 65ch;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .content-block {
+    margin-bottom: clamp(3rem, 8vh, 4.5rem);
+  }
+
+  .content-block h2 {
+    font-size: var(--step-2);
+    margin-bottom: 1.25rem;
+    margin-top: 0;
+  }
+
+  .content-block p {
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 70ch;
+    margin: 0 0 1rem 0;
+  }
+
+  .content-block p em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .principle-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 760px) {
+    .principle-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .principle-item {
+    padding: 1.5rem;
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    background: var(--paper-alt);
+  }
+
+  .principle-item h3 {
+    font-size: 1rem;
+    font-weight: 650;
+    margin: 0 0 0.5rem 0;
+    color: var(--ink);
+  }
+
+  .principle-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  .content-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .content-list li {
+    font-family: var(--sans);
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .content-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .content-list strong {
+    color: var(--ink);
+    font-weight: 650;
+  }
+</style>

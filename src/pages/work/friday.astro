@@ -1,0 +1,272 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Friday — AI Teammates for Product Teams — Pratyush Shrivastav"
+  description="AI teammates that accelerate product discovery, scoping, prototyping, and documentation. Specialized workflows for modern product teams."
+>
+  <section class="work-hero">
+    <div class="hero-content">
+      <div class="work-breadcrumb reveal">
+        <a href="/">← Back to home</a>
+      </div>
+
+      <div class="work-head reveal">
+        <span class="kicker kicker--accent">Friday</span>
+        <h1 class="work-title display">
+          AI teammates for modern product teams.
+        </h1>
+        <p class="work-lede">
+          Discovery. Scoping. Prototyping. Documentation. Friday is a collection of specialized AI workflows that remove repetitive work and accelerate product execution across the entire software lifecycle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-content">
+    <div class="page">
+      <div class="content-block reveal">
+        <h2>The Insight</h2>
+        <p>
+          Product development has a repetitive skeleton: discover the problem, scope the solution, prototype and validate, document what you built.
+        </p>
+        <p>
+          These phases aren't where thinking happens. They're where documentation happens. The thinking is done. The decisions are made. What's left is synthesis, organization, and articulation.
+        </p>
+        <p>
+          This is exactly what AI is good at. Not thinking. But helping humans think faster by handling the synthesis.
+        </p>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Problem</h2>
+        <p>
+          Most "AI for product teams" tools treat AI as a substitute for judgment. They try to make the decisions, which is where they fail.
+        </p>
+        <p>
+          Friday works differently. It amplifies judgment instead of replacing it. It handles the work that comes <em>after</em> decisions are made.
+        </p>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Core Workflows</h2>
+        <p>
+          Friday is built as a collection of specialized workflows, each designed for a specific phase of product development:
+        </p>
+        <div class="principle-list">
+          <div class="principle-item">
+            <h3>Discovery Synthesizer</h3>
+            <p>
+              Input: Interview transcripts, research notes, user feedback. Output: Organized insights, patterns, and a prioritized problem thesis.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Scope Guardian</h3>
+            <p>
+              Input: Feature ideas, user requests, technical constraints. Output: A prioritized scope document with clear boundaries and exclusions.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Prototype Generator</h3>
+            <p>
+              Input: Feature specifications and design direction. Output: Interactive prototypes in code, ready to show to users.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Spec Composer</h3>
+            <p>
+              Input: Design files, technical decisions, feature list. Output: Clear, actionable specifications for engineering teams.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Roadmap Architect</h3>
+            <p>
+              Input: Strategic goals, constraints, priorities. Output: A phased roadmap with clear outcomes and dependencies.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Documentation Engine</h3>
+            <p>
+              Input: Code, decisions, designs. Output: Comprehensive, well-organized documentation that actually stays current.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Design Principles</h2>
+        <ul class="content-list">
+          <li><strong>Amplify, don't replace</strong> — AI handles synthesis. Humans handle judgment. Neither replaces the other.</li>
+          <li><strong>Speed up iteration</strong> — Friday's value is velocity. Get to your next decision faster.</li>
+          <li><strong>Maintain context</strong> — Each workflow understands the project context and builds on previous decisions.</li>
+          <li><strong>Reversible outputs</strong> — Everything Friday generates is a starting point, not a destination. Easy to modify, reject, or rewrite.</li>
+          <li><strong>Integrated, not isolated</strong> — Friday lives in your existing tools (Slack, Figma, GitHub) not in a separate dashboard.</li>
+        </ul>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Vision</h2>
+        <p>
+          Today, product teams spend 30-40% of their time on synthesis work that doesn't require strategic judgment—writing specs, organizing notes, generating prototypes, documenting decisions.
+        </p>
+        <p>
+          Friday's ambition is simple: reduce that to 10%. Give product teams back 20-30 hours per month. Let them spend that time thinking, making decisions, and talking to users.
+        </p>
+        <p style="margin-top: 1.5rem; color: var(--ink-soft); font-style: italic;">
+          The goal isn't fewer product teams. It's product teams that have time to be strategic instead of operational.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .work-hero {
+    padding-block-start: clamp(2rem, 6vh, 3.5rem);
+    padding-block-end: clamp(2rem, 6vh, 3.5rem);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .work-content {
+    padding-block-start: clamp(2.5rem, 8vh, 4.5rem);
+    padding-block-end: clamp(3rem, 10vh, 5rem);
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vh, 2rem);
+  }
+
+  .work-breadcrumb a {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 250ms;
+  }
+  .work-breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .work-title {
+    font-size: clamp(2rem, 6vh, 3.2rem);
+    max-width: 16ch;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .work-lede {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(1rem, 2.4vh, 1.25rem);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 65ch;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .content-block {
+    margin-bottom: clamp(3rem, 8vh, 4.5rem);
+  }
+
+  .content-block h2 {
+    font-size: var(--step-2);
+    margin-bottom: 1.25rem;
+    margin-top: 0;
+  }
+
+  .content-block p {
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 70ch;
+    margin: 0 0 1rem 0;
+  }
+
+  .content-block p em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .principle-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 760px) {
+    .principle-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .principle-item {
+    padding: 1.5rem;
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    background: var(--paper-alt);
+  }
+
+  .principle-item h3 {
+    font-size: 1rem;
+    font-weight: 650;
+    margin: 0 0 0.5rem 0;
+    color: var(--ink);
+  }
+
+  .principle-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  .content-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .content-list li {
+    font-family: var(--sans);
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .content-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .content-list strong {
+    color: var(--ink);
+    font-weight: 650;
+  }
+</style>

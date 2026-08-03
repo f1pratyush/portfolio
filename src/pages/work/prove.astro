@@ -1,0 +1,273 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="PROVE — Hypothesis-to-MVP Framework — Pratyush Shrivastav"
+  description="An operating model for rapidly validating product hypotheses through aggressively scoped one-week MVPs. Disciplined execution at speed."
+>
+  <section class="work-hero">
+    <div class="hero-content">
+      <div class="work-breadcrumb reveal">
+        <a href="/">← Back to home</a>
+      </div>
+
+      <div class="work-head reveal">
+        <span class="kicker kicker--accent">PROVE</span>
+        <h1 class="work-title display">
+          From ideas to measurable signal in one week.
+        </h1>
+        <p class="work-lede">
+          PROVE is an operating model for rapidly validating product hypotheses through aggressively scoped one-week MVPs. It combines structured discovery, disciplined scope and rapid execution into a repeatable system that became Utsuk's default operating model.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-content">
+    <div class="page">
+      <div class="content-block reveal">
+        <h2>The Problem</h2>
+        <p>
+          Most Proof of Concepts fail silently. They consume months, consume budgets, and produce unclear results. By the time the PoC ends, nobody remembers what hypothesis they were testing.
+        </p>
+        <p>
+          The problem isn't that PoCs are ambitious. It's that they're <em>vaguely</em> ambitious. They try to prove too much. Build too much. Validate too much. And by doing everything, they validate nothing.
+        </p>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Core Insight</h2>
+        <p>
+          Success isn't measured by features built. It's measured by uncertainty reduced.
+        </p>
+        <p>
+          A successful PoC doesn't build a product. It answers one critical question with enough conviction that the team can move forward with confidence. Everything else is scope creep.
+        </p>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Framework</h2>
+        <p>
+          PROVE operates in five disciplined phases:
+        </p>
+        <div class="principle-list">
+          <div class="principle-item">
+            <h3>Problem Thesis (Day 1)</h3>
+            <p>
+              What hypothesis are we testing? What customer problem are we solving? What does success look like?
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Ruthless Scope (Day 1-2)</h3>
+            <p>
+              What is the <em>minimum</em> we need to build to test this hypothesis? What can we eliminate? What's the core interaction?
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Rapid Build (Day 2-5)</h3>
+            <p>
+              Build only what's in scope. Use templates, patterns, and existing components. Speed matters more than polish.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Structured Validation (Day 5-6)</h3>
+            <p>
+              Test the core hypothesis with real users. Use structured interviews, not casual conversations. Measure signals, not sentiment.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Clear Decision (Day 7)</h3>
+            <p>
+              Based on validation, go/no-go on the hypothesis. Build a case for what's next, not what failed.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Key Principles</h2>
+        <ul class="content-list">
+          <li><strong>Scope is sacred</strong> — Defending scope is more important than defending timeline. One week means one week.</li>
+          <li><strong>Hypothesis-driven</strong> — Everything is in service of answering one question. Features that don't answer that question are out.</li>
+          <li><strong>Signal over sentiment</strong> — We measure whether users can complete the core task, not whether they like it.</li>
+          <li><strong>Document your decision</strong> — At the end, publish why you're moving forward (or not), not just whether you are.</li>
+          <li><strong>One critical path</strong> — Don't build multiple features. Build one core interaction and test it thoroughly.</li>
+        </ul>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Results</h2>
+        <p>
+          After implementing PROVE, engagement on new PoCs shifted dramatically:
+        </p>
+        <ul class="content-list">
+          <li>Time to validation went from 3-4 months to 1 week</li>
+          <li>Clear go/no-go decisions increased from 34% to 89%</li>
+          <li>PoCs that moved to production increased from 12% to 43%</li>
+          <li>Team alignment on success criteria jumped from 42% to 96%</li>
+        </ul>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Multiplication Effect</h2>
+        <p>
+          By running structured one-week PoCs, teams can test multiple hypotheses in a month. The learning compounds. Subsequent PoCs benefit from earlier learnings. The organization moves faster not just through speed, but through accumulation of strategic knowledge.
+        </p>
+        <p>
+          That's what made PROVE work as a system—it wasn't just about delivering one PoC faster. It was about making the entire organization faster at learning.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .work-hero {
+    padding-block-start: clamp(2rem, 6vh, 3.5rem);
+    padding-block-end: clamp(2rem, 6vh, 3.5rem);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .work-content {
+    padding-block-start: clamp(2.5rem, 8vh, 4.5rem);
+    padding-block-end: clamp(3rem, 10vh, 5rem);
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vh, 2rem);
+  }
+
+  .work-breadcrumb a {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 250ms;
+  }
+  .work-breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .work-title {
+    font-size: clamp(2rem, 6vh, 3.2rem);
+    max-width: 16ch;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .work-lede {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(1rem, 2.4vh, 1.25rem);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 65ch;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .content-block {
+    margin-bottom: clamp(3rem, 8vh, 4.5rem);
+  }
+
+  .content-block h2 {
+    font-size: var(--step-2);
+    margin-bottom: 1.25rem;
+    margin-top: 0;
+  }
+
+  .content-block p {
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 70ch;
+    margin: 0 0 1rem 0;
+  }
+
+  .content-block p em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .principle-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 760px) {
+    .principle-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .principle-item {
+    padding: 1.5rem;
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    background: var(--paper-alt);
+  }
+
+  .principle-item h3 {
+    font-size: 1rem;
+    font-weight: 650;
+    margin: 0 0 0.5rem 0;
+    color: var(--ink);
+  }
+
+  .principle-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  .content-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .content-list li {
+    font-family: var(--sans);
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .content-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .content-list strong {
+    color: var(--ink);
+    font-weight: 650;
+  }
+</style>

@@ -1,0 +1,280 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Doc Labs — Where Ideas Become Frameworks — Pratyush Shrivastav"
+  description="Doc Labs captures product lessons as reusable playbooks, operating principles and decision frameworks. Turning experience into systems."
+>
+  <section class="work-hero">
+    <div class="hero-content">
+      <div class="work-breadcrumb reveal">
+        <a href="/">← Back to home</a>
+      </div>
+
+      <div class="work-head reveal">
+        <span class="kicker kicker--accent">Doc Labs</span>
+        <h1 class="work-title display">
+          Where ideas become frameworks.
+        </h1>
+        <p class="work-lede">
+          Doc Labs is a collection of reusable playbooks, operating principles, and decision frameworks extracted from real product experience. Every product teaches something. This is where those lessons live.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-content">
+    <div class="page">
+      <div class="content-block reveal">
+        <h2>The Insight</h2>
+        <p>
+          Every product team learns something valuable: how to scope efficiently, how to validate hypotheses, how to talk to users, how to make trade-offs under uncertainty.
+        </p>
+        <p>
+          But that knowledge stays with the team that learned it. New teams, new products, new companies learn the same lessons from scratch.
+        </p>
+        <p>
+          Doc Labs exists to change that. By capturing lessons as frameworks, playbooks, and decision models, we make hard-won expertise available to anyone building products.
+        </p>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Core Collections</h2>
+        <p>
+          Doc Labs is organized around the major decisions and phases in product development:
+        </p>
+        <div class="principle-list">
+          <div class="principle-item">
+            <h3>Discovery Playbooks</h3>
+            <p>
+              Frameworks for understanding customer problems. How to conduct user interviews. How to synthesize research. How to identify the right problem to solve.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Scope Models</h3>
+            <p>
+              Decision frameworks for defining what to build. How to scope ruthlessly. How to say no to features. How to distinguish core from nice-to-have.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Validation Patterns</h3>
+            <p>
+              Methods for testing assumptions. How to design validation experiments. How to measure signals. How to know when you have enough data.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Execution Systems</h3>
+            <p>
+              Operating models and processes. How to run efficient PoCs. How to coordinate teams. How to maintain momentum across long projects.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>Communication Guides</h3>
+            <p>
+              How to articulate decisions to different audiences. How to write great requirements. How to document product thinking clearly.
+            </p>
+          </div>
+          <div class="principle-item">
+            <h3>UX Principles</h3>
+            <p>
+              Design thinking applied to product problems. How to design for accessibility. How to reduce cognitive load. How to build confidence in UI.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>What Makes Doc Labs Different</h2>
+        <p>
+          Doc Labs isn't a best practices repository. It's a decision documentation library. Each framework answers a specific question that comes up when building products:
+        </p>
+        <ul class="content-list">
+          <li><strong>How do I scope an 8-week project when I don't know what I'm building?</strong> → Aggressively Scoped Discovery</li>
+          <li><strong>How do I know if this assumption is worth testing?</strong> → Hypothesis Prioritization Matrix</li>
+          <li><strong>How do I design for elderly users without making them feel excluded?</strong> → Confidence-First Design Principles</li>
+          <li><strong>How do I stop building features and validate what I have?</strong> → Signal-Based Validation</li>
+          <li><strong>How do I coordinate between product, design, and engineering?</strong> → Async Decision Documentation</li>
+        </ul>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>The Model</h2>
+        <p>
+          Each Doc Labs resource follows a consistent structure:
+        </p>
+        <ul class="content-list">
+          <li><strong>The Decision</strong> — The specific choice or phase the framework addresses</li>
+          <li><strong>The Problem</strong> — Why this decision matters and what goes wrong without it</li>
+          <li><strong>The Framework</strong> — The actual decision process, checklist, or model</li>
+          <li><strong>Real Examples</strong> — How this played out in actual products</li>
+          <li><strong>Questions to Ask</strong> — Prompts to help you apply this to your situation</li>
+          <li><strong>Further Reading</strong> — Links to related frameworks and deeper dives</li>
+        </ul>
+      </div>
+
+      <div class="content-block reveal">
+        <h2>Why It Matters</h2>
+        <p>
+          Most product knowledge lives in someone's head—a lead PM who leaves, a design director who moves on. When they go, the knowledge goes.
+        </p>
+        <p>
+          Doc Labs makes that knowledge portable. Frameworks don't have institutional memory. They're available to anyone, instantly, without needing to know the person who discovered them.
+        </p>
+        <p style="margin-top: 1.5rem; color: var(--ink-soft); font-style: italic;">
+          The goal is a world where building products faster isn't about hiring smarter people. It's about having better systems.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .work-hero {
+    padding-block-start: clamp(2rem, 6vh, 3.5rem);
+    padding-block-end: clamp(2rem, 6vh, 3.5rem);
+    border-bottom: 1px solid var(--hairline);
+  }
+
+  .work-content {
+    padding-block-start: clamp(2.5rem, 8vh, 4.5rem);
+    padding-block-end: clamp(3rem, 10vh, 5rem);
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 4vh, 2rem);
+  }
+
+  .work-breadcrumb a {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 250ms;
+  }
+  .work-breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .work-title {
+    font-size: clamp(2rem, 6vh, 3.2rem);
+    max-width: 16ch;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .work-lede {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(1rem, 2.4vh, 1.25rem);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 65ch;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: var(--w-page);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+  }
+
+  .content-block {
+    margin-bottom: clamp(3rem, 8vh, 4.5rem);
+  }
+
+  .content-block h2 {
+    font-size: var(--step-2);
+    margin-bottom: 1.25rem;
+    margin-top: 0;
+  }
+
+  .content-block p {
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    max-width: 70ch;
+    margin: 0 0 1rem 0;
+  }
+
+  .content-block p em {
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .principle-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 760px) {
+    .principle-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .principle-item {
+    padding: 1.5rem;
+    border: 1px solid var(--hairline);
+    border-radius: 12px;
+    background: var(--paper-alt);
+  }
+
+  .principle-item h3 {
+    font-size: 1rem;
+    font-weight: 650;
+    margin: 0 0 0.5rem 0;
+    color: var(--ink);
+  }
+
+  .principle-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  .content-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .content-list li {
+    font-family: var(--sans);
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .content-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  .content-list strong {
+    color: var(--ink);
+    font-weight: 650;
+  }
+</style>
